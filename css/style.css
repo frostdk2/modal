@@ -130,9 +130,7 @@ h6 {
 
 .welcome-modal__close {
 	width: 36px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+display: block;
 	border-radius: 50%;
 	overflow: hidden;
 	border: 1px solid #292b2c;
