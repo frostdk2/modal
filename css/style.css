@@ -21,7 +21,7 @@ body {
 body {
 	color: #292b2c;
 	line-height: 1;
-	font-family: "Public, sans-serif";
+	font-family:'Public Sans', sans-serif;
 	font-size: 18px;
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
@@ -74,13 +74,9 @@ h6 {
 	font-size: inherit;
 }
 
-.lock body {
-	overflow: hidden;
-	touch-action: none;
-}
 
 .welcome-modal {
-	font-family: "Public, sans-serif";
+	font-family: 'Public Sans', sans-serif;
 	position: fixed;
 	width: 100%;
 	height: 100%;
@@ -109,19 +105,10 @@ h6 {
 }
 
 .welcome-modal__logo {
-	width: 36px;
-	height: 36px;
 	cursor: pointer;
-	display: none;
 	position: absolute;
 	top: 15px;
 	right: 55px;
-}
-
-@media (min-width: 480px) {
-	.welcome-modal__logo {
-		display: block;
-	}
 }
 
 .welcome-modal__logo-image {
@@ -130,8 +117,10 @@ h6 {
 
 .welcome-modal__close {
 	width: 36px;
-Height:36px;
-display: block;
+	height: 36px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	border-radius: 50%;
 	overflow: hidden;
 	border: 1px solid #292b2c;
@@ -140,10 +129,6 @@ display: block;
 	top: 15px;
 	right: 15px;
 	padding: 10px;
-}
-
-.welcome-modal__close-svg {
-	max-width: 100%;
 }
 
 .welcome-modal__title {
@@ -166,15 +151,9 @@ display: block;
 	}
 }
 
-@media (min-width: 767.98px) {
+@media (min-width: 768px) {
 	.welcome-modal__title {
 		font-size: 42px;
-	}
-}
-
-@media (min-width: 1024px) {
-	.welcome-modal__title {
-		font-size: 45px;
 	}
 }
 
@@ -184,6 +163,7 @@ display: block;
 	line-height: 1.4;
 	text-align: center;
 	margin-bottom: 35px;
+	max-width: 550px;
 }
 
 .welcome-modal__text:last-child {
@@ -196,18 +176,6 @@ display: block;
 	}
 }
 
-@media (min-width: 767.98px) {
-	.welcome-modal__text {
-		max-width: 500px;
-	}
-}
-
-@media (min-width: 1024px) {
-	.welcome-modal__text {
-		font-size: 20px;
-		max-width: 550px;
-	}
-}
 
 .welcome-modal__donate {
 	display: flex;
@@ -216,9 +184,6 @@ display: block;
 	align-items: center;
 }
 
-.welcome-modal__donate:not(:last-child) {
-	margin-right: 50px;
-}
 
 @media (min-width: 480px) {
 	.welcome-modal__donate {
@@ -232,9 +197,6 @@ display: block;
 	margin-bottom: 30px;
 }
 
-.welcome-modal__payment:last-child {
-	margin-bottom: 0;
-}
 
 @media (min-width: 480px) {
 	.welcome-modal__payment {
@@ -251,8 +213,6 @@ display: block;
 }
 
 .welcome-modal__qr {
-	width: 190px;
-	height: 228px;
 	align-self: center;
 	margin-bottom: 15px;
 }
